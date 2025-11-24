@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa Culturama</title>
+</head>
+
+<body>
+    <header>
+        <h1> Pesquisa Online</h1>
+    </header>
+
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" required> <br>
+
+                <label for="userAge">Idade</label>
+                <input type="number" name="userAge" min="12" max="100" required> <br>
+
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate" required> <br>
+
+                <label for="useremail">E-mail</label>
+                <input type="email" name="userEmail" required> <br>
+
+                <label for="userPhoneNumber">Telefone</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + numero e sem espacos">
+                <br>
+
+                <label for="userImage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userImage"> <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Genero:</p>
+                <input type="radio" name="userGender" value="feminino">
+                <label for="userGender">Feminino</label>
+                <input type="radio" name="userGender" value="masculino">
+                <label for="userGender">Masculino</label>
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Prefiro nao informar</label>
+                <br>
+
+                <label for="maritalStatus">Estado Civil</label>
+                <select name="maritalStatus">
+                    <option value="notInformed">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="uniaoestavel">Uniao estavel</option>
+                </select>
+                <br>
+
+                <label for="state">Estado:</label>
+                <select name="state" required>
+
+                    <option value="notInformed">Selecione...</option>
+                    <option value="acre"> Acre</option>
+                    <option value="alagoas"> Alagoas</option>
+                    <option value="amapa"> Amapá</option>
+                    <option value="amazonas"> Amazonas</option>
+                    <option value="bahia"> Bahia</option>
+                    <option value="ceara"> Ceará</option>
+                    <option value="distritoFederal"> Distrito Federal</option>
+                    <option value="espiritoSanto"> Espirito Santo</option>
+                    <option value="goias"> Goiás</option>
+                    <option value="maranhao"> Maranhão</option>
+                    <option value="matoGrossoDoSul"> Mato Grosso do Sul</option>
+                    <option value="matoGrosso"> Mato Grosso</option>
+                    <option value="minasGerais"> Minas Gerais</option>
+                    <option value="para"> Pará</option>
+                    <option value="paraiba"> Paraíba</option>
+                    <option value="parana"> Paraná</option>
+                    <option value="pernambuco"> Pernambuco</option>
+                    <option value="piaui"> Piauí</option>
+                    <option value="rioDeJaneiro"> Rio de Janeiro</option>
+                    <option value="rioGrandeDoNorte"> Rio Grande do Norte</option>
+                    <option value="rioGrandedoSul"> Rio Grande do Sul</option>
+                    <option value="rondonia"> Rondônia</option>
+                    <option value="roraima"> Roraima</option>
+                    <option value="santaCatarina"> Santa Catarina</option>
+                    <option value="saoPaulo"> São Paulo</option>
+                    <option value="sergipe"> Sergipe</option>
+                    <option value="tocantins"> Tocantins</option>
+                </select>
+                <br>
+
+                <label for="city">Cidade</label>
+                <input type="text" name="city" placeholder="Ex: Toledo">
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+
+</html>
