@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/culturama-favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <title>Pesquisa Culturama</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="img/logo-culturama.png" alt="logo culturama">
+            <h1> Pesquisa Online</h1>
+        </header>
+
+        <section>
+            <form action="sucesso.html" method="get">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="userName">Nome</label>
+                    <input type="text" name="userName" required> <br>
+
+                    <label for="userAge">Idade</label>
+                    <input type="number" name="userAge" min="12" max="100" required> <br>
+
+                    <label for="birthDate">Data de nascimento</label>
+                    <input type="date" name="birthDate" required> <br>
+
+                    <label for="useremail">E-mail</label>
+                    <input type="email" name="userEmail" required> <br>
+
+                    <label for="userPhoneNumber">Telefone</label>
+                    <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
+                        placeholder="DDD + numero e sem espacos">
+                    <br>
+
+                    <label for="userImage">Upload de foto</label>
+                    <input type="file" accept="image/*" name="userImage"> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil</legend>
+
+                    <p>Genero:</p>
+                    <input type="radio" name="userGender" value="feminino">
+                    <label for="userGender">Feminino</label>
+                    <input type="radio" name="userGender" value="masculino">
+                    <label for="userGender">Masculino</label>
+                    <input type="radio" name="userGender" value="notInformed">
+                    <label for="userGender">Prefiro nao informar</label>
+                    <br>
+
+                    <label for="maritalStatus">Estado Civil</label>
+                    <select name="maritalStatus">
+                        <option value="notInformed">Selecione...</option>
+                        <option value="casado">Casado</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="uniaoestavel">Uniao estavel</option>
+                    </select>
+                    <br>
+
+                    <label for="state">Estado:</label>
+                    <select name="state" required>
+
+                        <option value="notInformed">Selecione...</option>
+                        <option value="acre"> Acre</option>
+                        <option value="alagoas"> Alagoas</option>
+                        <option value="amapa"> Amapá</option>
+                        <option value="amazonas"> Amazonas</option>
+                        <option value="bahia"> Bahia</option>
+                        <option value="ceara"> Ceará</option>
+                        <option value="distritoFederal"> Distrito Federal</option>
+                        <option value="espiritoSanto"> Espirito Santo</option>
+                        <option value="goias"> Goiás</option>
+                        <option value="maranhao"> Maranhão</option>
+                        <option value="matoGrossoDoSul"> Mato Grosso do Sul</option>
+                        <option value="matoGrosso"> Mato Grosso</option>
+                        <option value="minasGerais"> Minas Gerais</option>
+                        <option value="para"> Pará</option>
+                        <option value="paraiba"> Paraíba</option>
+                        <option value="parana"> Paraná</option>
+                        <option value="pernambuco"> Pernambuco</option>
+                        <option value="piaui"> Piauí</option>
+                        <option value="rioDeJaneiro"> Rio de Janeiro</option>
+                        <option value="rioGrandeDoNorte"> Rio Grande do Norte</option>
+                        <option value="rioGrandedoSul"> Rio Grande do Sul</option>
+                        <option value="rondonia"> Rondônia</option>
+                        <option value="roraima"> Roraima</option>
+                        <option value="santaCatarina"> Santa Catarina</option>
+                        <option value="saoPaulo"> São Paulo</option>
+                        <option value="sergipe"> Sergipe</option>
+                        <option value="tocantins"> Tocantins</option>
+                    </select>
+                    <br>
+
+                    <label for="city">Cidade</label>
+                    <input type="text" name="city" placeholder="Ex: Toledo">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habitos</legend>
+                    <p>Redes Sociais:</p>
+                    <input type="checkbox" name="social" value="instagram"> <label for="social">Instagram</label>
+                    <br>
+                    <input type="checkbox" name="social" value="facebook"> <label for="social">Facebook</label>
+                    <br>
+                    <input type="checkbox" name="social" value="linkedin"> <label for="social">Linkedin</label>
+                    <br>
+                    <input type="checkbox" name="social" value="twitch"> <label for="social">Twitch</label> <br>
+
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="styleTypes" type="text" name="userMusicStyle" id="musicStyle">
+                    <datalist id="styleTypes">
+                        <option value="Rock"></option>
+                        <option value="Pop"></option>
+                        <option value="Samba"></option>
+                        <option value="Sertanejo"></option>
+                    </datalist>
+                    <br>
+
+                    <label for="favoriteColor">Cor Favorita</label>
+                    <input type="color" name="favoriteColor" id="favoriteColor">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Avaliacao</legend>
+
+                    <p>Nota da avaliacao:</p>
+                    <input type="radio" id="otima" value="otima" name="avaliacao"> <label for="otima">Otima</label>
+                    <input type="radio" id="bom" value="bom" name="avaliacao"> <label for="bom">Bom</label>
+                    <input type="radio" id="regular" value="regular" name="avaliacao"> <label
+                        for="regular">Regular</label>
+                    <input type="radio" id="ruim" value="ruim" name="avaliacao"> <label for="ruim">Ruim</label>
+                    <br>
+                    <label for="commit">Comentario:</label> <br>
+                    <textarea name="commit" id="commit" placeholder="Deixe seu comentario aqui..."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confimacoes</legend>
+
+                    <input type="checkbox" name="userLGPD" id="userLGPDTerm" value="accepted" required> <label
+                        for="userLGPDTerm">Eu aceito participar da pesquisa</label> <br>
+
+                    <input type="checkbox" name="userGetrResult" id="getResult" value="accepted"> <label
+                        for="getResult">Desejo receber o resultado por e-mail</label>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
