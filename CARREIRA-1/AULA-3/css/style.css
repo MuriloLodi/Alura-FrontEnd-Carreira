@@ -1,55 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f9f9f9;
     font-family: "Work Sans", sans-serif;
 }
 
-main{
+main {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
 }
 
-header{
+header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-h1{
+h1 {
     font-family: "Fjalla One", sans-serif;
 }
 
-form{
+form {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 100px;
 }
 
-fieldset{
+fieldset {
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #cccccc;
     margin-bottom: 15px;
 }
 
-legend{
+legend {
     font-weight: bold;
     font-size: 18px;
     padding: 0 5px;
 }
 
-img{
+img {
     width: 100px;
 }
 
 
-input, select, textarea{
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -57,43 +59,44 @@ input, select, textarea{
     border-radius: 5px;
 }
 
-textarea{
+textarea {
     min-height: 100px;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  width: auto;
+    width: auto;
 }
 
 input[type="color"] {
-  width: 40px;
-  padding: 0 5px;
+    width: 40px;
+    padding: 0 5px;
 }
 
 label {
-  display: inline-block;
-  margin-bottom: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-p{
+p {
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 input:invalid,
 select:invalid,
-textarea:invalid{
+textarea:invalid {
     border-color: red;
 }
+
 input:valid,
 select:valid,
-textarea:valid{
+textarea:valid {
     border-color: green;
 }
 
 
-button{
+button {
     width: 100px;
     height: 30px;
     margin-right: 10px;
@@ -103,12 +106,22 @@ button{
     cursor: pointer;
 }
 
-button[type="submit"]:hover{
-background-color: green;
-color: white;
+button[type="submit"]:hover {
+    background-color: green;
+    color: white;
 }
 
-button[type="reset"]:hover{
-background-color: orangered;
-color: white;
+button[type="reset"]:hover {
+    background-color: orangered;
+    color: white;
+}
+
+input[type="tel"],
+input[type="file"] {
+    margin-bottom: 0;
+}
+
+small{
+    margin-bottom: 20px;
+    display: inline-block;
 }
